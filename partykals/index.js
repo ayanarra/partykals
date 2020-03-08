@@ -3,10 +3,16 @@
  * Author: Ronen Ness.
  * Since: 2019.
  */
-module.exports = {
-    ParticlesSystem: require('./particles_system'),
-    Particle: require('./particle'),
-    Emitter: require('./emitter'),
-    Utils: require('./utils'),
-    Randomizers: require('./randomizers'),
+import { ParticlesSystem } from './particles_system'
+import { Particle } from './particle'
+import { Emitter } from './emitter'
+import { Utils } from './utils'
+import * as Randomizers from './randomizers'
+
+export {
+  ParticlesSystem,
+  Particle,
+  Emitter,
+  Utils,
+  Randomizers
 }

@@ -3,7 +3,8 @@
  * Author: Ronen Ness.
  * Since: 2019.
  */
-var code = `
+
+const FragmentShaderCode = `
 // material uniforms
 uniform vec3 globalColor;
 
@@ -61,5 +62,6 @@ void main()
         if (gl_FragColor.a < 0.00001) { discard; }
     #endif
 }
-`;
-module.exports = code;
+`
+
+export { FragmentShaderCode }

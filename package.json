@@ -2,9 +2,13 @@
   "name": "partykals",
   "version": "1.0.1",
   "description": "Easy-to-use Particle Systems for THREE.js.",
+  "source": "partykals/index.js",
   "main": "dist/partykals.js",
+  "module": "dist/partykals.module.js",
+  "unpkg": "dist/partykals.umd.js",
   "scripts": {
-    "test": ""
+    "build": "microbundle",
+    "format": "standard 'partykals/**/*.js' --fix"
   },
   "repository": {
     "type": "git",
@@ -12,16 +16,25 @@
   },
   "keywords": [
     "webgl",
-	"three",
-	"threejs",
-	"particle system",
-	"particles",
+    "three",
+    "threejs",
+    "particle system",
+    "particles",
     "effects"
+  ],
+  "dependencies": {
+    "three": "^0.113.2"
+  },
+  "browserslist": [
+    "last 3 Chrome versions"
   ],
   "author": "Ronen Ness",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/RonenNess/partykals/issues"
   },
-  "homepage": "https://github.com/RonenNess/partykals/"
+  "homepage": "https://github.com/RonenNess/partykals/",
+  "devDependencies": {
+    "microbundle": "^0.11.0"
+  }
 }

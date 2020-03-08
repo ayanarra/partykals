@@ -3,33 +3,29 @@
  * Author: Ronen Ness.
  * Since: 2019.
 */
-const Randomizer = require('./randomizer');
-const Utils = require('../utils');
-
+import { Randomizer } from './randomizer'
+import { Utils } from '../utils'
 
 /**
  * Min-Max number randomizer.
  */
-class MinMaxRandomizer extends Randomizer
-{
-    /**
+class MinMaxRandomizer extends Randomizer {
+  /**
      * Create the min-max randomizer from min and max.
      */
-    constructor(min, max)
-    {
-        super();
-        this.min = min;
-        this.max = max;
-    }
-    
-    /**
+  constructor (min, max) {
+    super()
+    this.min = min
+    this.max = max
+  }
+
+  /**
      * Generate a random number.
      */
-    generate()
-    {
-        return Utils.getRandomBetween(this.min, this.max);
-    }
+  generate () {
+    return Utils.getRandomBetween(this.min, this.max)
+  }
 }
 
 // export the randomizer class
-module.exports = MinMaxRandomizer;
+export { MinMaxRandomizer }

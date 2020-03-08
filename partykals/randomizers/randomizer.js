@@ -7,17 +7,15 @@
 /**
  * Base class for all vector randomizers.
  */
-class Randomizer
-{
-    /**
+class Randomizer {
+  /**
      * Generate and return a random value.
      * This is the main method to implement.
      */
-    generate()
-    {
-        throw new Error("Not implemented.");
-    }
+  generate () {
+    throw new Error('Not implemented.')
+  }
 }
 
 // export the base class
-module.exports = Randomizer;
+export { Randomizer }

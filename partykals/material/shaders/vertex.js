@@ -3,7 +3,7 @@
  * Author: Ronen Ness.
  * Since: 2019.
  */
-var code = `
+const VertexShaderCode = `
 // attributes we get from geometry
 attribute float alpha;
 
@@ -69,5 +69,5 @@ void main()
         gl_PointSize = size;
     #endif
 }
-`;
-module.exports = code;
+`
+export { VertexShaderCode }
