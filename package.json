@@ -6,6 +6,7 @@
   "main": "dist/partykals.js",
   "module": "dist/partykals.module.js",
   "unpkg": "dist/partykals.umd.js",
+  "files": ["dist/*.js"],
   "scripts": {
     "build": "microbundle",
     "format": "standard 'partykals/**/*.js' --fix"
